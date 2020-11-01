@@ -109,6 +109,25 @@
         Write a Python function called \mintinline{python}{sqrt2} that calculates and prints to the screen the square root of 2 to 100 decimal places.
         Your code should not depend on any module from the standard library\footnote{By the standard library, we mean the modules and packages that come as standard with Python. Anything built-in that can be used without an \mintinline{python}{import} statement can be used.} or otherwise.
         You should research the task first and include references and a description of your algorithm.
+      \item
+        \textbf{November 2\textsuperscript{nd}, 2020:}
+        The Chi-squared test for independence is a statistical hypothesis test like a $t$-test. It is used to analyse whether two categorical variables are independent. The Wikipedia article gives the table below as an example~\cite{wikichisquare}, stating the Chi-squared value based on it is approximately $24.6$. Use \mintinline{python}{scipy.stats} to verify this value and calculate the associated $p$ value. You should include a short note with references justifying your analysis in a markdown cell.
+        
+        \begin{table}[H]
+          \setlength{\tabcolsep}{12pt}
+          \renewcommand{\arraystretch}{1.1}
+          \centering
+          \begin{tabular}{lrrrrr}
+            & A & B & C& D & Total \\
+            \midrule
+            White collar & 90 & 60 & 104 & 95 & 349 \\
+            Blue collar & 30 & 50 & 51 & 20 & 151 \\
+            No collar & 30 & 40 & 45 & 35 & 150 \\
+            \midrule
+            Total & 150 & 150 & 200 & 150 & 650
+          \end{tabular}
+        \end{table}
+
     \end{enumerate}
 
   \newpage
