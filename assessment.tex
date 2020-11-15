@@ -127,7 +127,15 @@
             Total & 150 & 150 & 200 & 150 & 650
           \end{tabular}
         \end{table}
-
+        \newpage
+      \item
+        \textbf{November 16\textsuperscript{th}, 2020:}
+        The standard deviation of an array of numbers \mintinline{python}{x} is calculated using \mintinline{python}{numpy} as \mintinline{python}{np.sqrt(np.sum((x - np.mean(x))**2)/len(x))}.
+        However, Microsoft Excel has two different versions of the standard deviation calculation, \mintinline{python}{STDDEV.P} and \mintinline{python}{STDDEV.S}.
+        The \mintinline{python}{STDDEV.P} function performs the above calculation but in the \mintinline{python}{STDDEV.S} calculation the division is by \mintinline{python}{len(x)-1} rather than \mintinline{python}{len(x)}.
+        Research these Excel functions, writing a note in a Markdown cell about the difference between them.
+        Then use \mintinline{python}{numpy} to perform a simulation demonstrating that the \mintinline{python}{STDDEV.S} calculation is a better estimate for the standard deviation of a population when performed on a sample.
+        Note that part of this task is to figure out the terminology in the previous sentence.
     \end{enumerate}
 
   \newpage
